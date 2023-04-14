@@ -1,0 +1,24 @@
+{
+    "name": "realdriss/seo-helper",
+    "description": "SEO helper package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "RealDriss\\SeoHelper\\": "src"
+        }
+    },
+    "require": {
+        "realdriss/platform": "*@dev",
+        "realdriss/theme": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RealDriss\\SeoHelper\\Providers\\SeoHelperServiceProvider"
+            ],
+            "aliases": {
+                "SeoHelper": "RealDriss\\SeoHelper\\Facades\\SeoHelperFacade"
+            }
+        }
+    }
+}
